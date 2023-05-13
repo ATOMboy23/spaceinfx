@@ -1,0 +1,218 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.text{
+    color: aqua;
+    text-align: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+nav {
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	top: 0;
+	font-family: 'Montserrat', sans-serif;
+	padding: 0 5%;
+	height: 100px;
+	background-color: transparent;
+  color: black;
+}
+nav .links {
+	float: right;
+	padding: 0;
+	width: 60%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+nav .links li {
+	list-style: none;
+}
+nav .links a {
+	display: block;
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+}
+#nav-toggle {
+	position: absolute;
+	top: -100px;
+}
+nav .icon-burger {
+	display: none;
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+nav .icon-burger .line {
+	width: 30px;
+	height: 5px;
+	background-color: white;
+	margin: 5px;
+	border-radius: 3px;
+	transition: all .3s ease-in-out;
+}
+div{
+    border-bottom: #05f505;
+    border-style: 2px solid green;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+    background-color: black;
+    text-align: center;
+    width: 50vw;
+    height: 40vh;
+
+
+}
+.box:hover{
+    color: red;        
+}
+img{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column; 
+    position: relative;
+    width: 25vw;
+}
+.subtitle {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #10f9e6;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  .subtxt{
+    color: #10f9e6;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify ;
+  }
+@media screen and (max-width: 768px) {
+    nav .links {
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 100px;
+        bottom: 100%;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        overflow: hidden;
+        box-sizing: border-box;
+        transition: all .5s ease-in-out;
+        color: white;
+    }
+    nav .links a {
+        font-size: 20px;
+        color: white;
+    }
+    nav :checked ~ .links {
+        bottom: 0;
+    }
+    nav .icon-burger {
+        display: block;
+    }
+    nav :checked ~ .icon-burger .line:nth-child(1) {
+        transform: translateY(10px) rotate(225deg);
+    }
+    nav :checked ~ .icon-burger .line:nth-child(3) {
+        transform: translateY(-10px) rotate(-225deg);
+    }
+    nav :checked ~ .icon-burger .line:nth-child(2) {
+        opacity: 0;
+    }
+    .subtitle{
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+    }
+    
+}
+@media screen and (max-width: 1271px){
+    .video{
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        height: fit-content;
+        display: flexbox;
+        position: relative;
+        
+    }
+}
+@media screen  and (max-width:732px)
+{
+    div{
+        width: 40vw;
+        height: fit-content;
+        margin: 75px;
+        display: flex;
+        align-items: center;
+
+    }
+    img{
+        width: 25vw;
+        margin-top: 75px;
+    }
+    .subtitle{
+        font-size: 1rem;
+        margin-top: auto;
+    }
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: ;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+a{
+    color: aliceblue;
+    text-decoration: none;  
+}
+a:hover{
+    text-decoration: none;
+}
+
+#start{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+}
