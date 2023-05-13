@@ -4,12 +4,12 @@
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Home | Spaceinfx</title>
+<title>Blackhole | Spaceinfx</title>
 </head>
 <body>
   <section id="start">
-    <h2 class="text">Space</h2>
-
+    <h2 class="text">Spaceinfx</h2>
+    <button onclick="toggleTheme()">Switch Theme</button>
     <nav>
         <input id="nav-toggle" type="checkbox">
         <ul class="links">
@@ -28,6 +28,7 @@
       </nav>
       
  <img src="random4.jpg">
+ 
  <h2 class="subtitle">Blackholes are basically areas with Tons of mass in small volume that causes the huge curvature in the gravitational field</h2>
  <div>
  <h3 class="subtxt">Yes, you got it me right. You might have heard about space mysterious and it's pecular ideas in the Interstellar movie. Such examples we have <br>
@@ -39,9 +40,33 @@
  </div>
 </section>
 <section id="ton618">
-  <h1 class="title">TON 618</h1>
-  <h4 class="subtxt">Now let's see one of the largest Blackhole recorded in the observable universe. <br>NASA has revealed that it tips the scales at 66 billion times the Sun's mass!  </h4>
+  <h1 class="text" style="text-align: center;">TON 618</h1>
+  <h4 class="subtxt">Now let's see one of the largest Blackhole recorded in the observable universe.<br> It is TON 618(short for Tonantzintla 618) located near the border of the constellations <a href="https://en.wikipedia.org/wiki/Canes_Venatici"> Canes Venatici</a> <br>NASA has revealed that it tips the scales at 66 billion times the Sun's mass! <br>
+    A more interesting fact is that it glows at an luminosity of 4 x 10^40 watts which is 1.5x more than Sun's luminosity so if where we are to repace Sun's position with Ton 618 we would see this</h4>
+    <img src="replacement.jfif" class="Ton" alt="replacing Sun with Ton 618">
+    <img src="comparison.jfif" alt="comparing our solar system with TON 618">
+    <br>
+</section>
+<br>
+<br>
+<br>
+
+<section id="Phoenix">
+  <h1 class="text" style="text-align: center;">Phoenix A</h1>
+  <img src="comparing ton with phoenix.jfif" class="Ton" alt="comparing ton with phoenix">
+  <h4 class="subtxt">As you would have seen the above image it would have shocked you, Comparing Ton 618 with Phoenix A is so gigantic. Yes you got me. Phoenix A is the supermassive black hole recorded in the observabled universe which holds around 100 billions Suns, located 8.57 billions light years from Earth </h4>
 </section>
 </body>
 </html>
     
+<script>
+function toggleTheme() {
+  var body = document.body;
+  var currentTheme = body.className;
+  if (currentTheme === "light-theme") {
+    body.className = "dark-theme";
+  } else {
+    body.className = "light-theme";
+  }
+}
+</script>

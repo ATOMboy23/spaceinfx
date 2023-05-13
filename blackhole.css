@@ -1,18 +1,26 @@
 html{
     scroll-behavior: smooth;
 }
-body{
-    background-color: black;
-    display: flex;
+body {
+    background-color: #f7f7f7;
+    color: #333;
+
+  }
+  
+  /* Styles for dark theme */
+  body.dark-theme {
+    background-color: #222;
+    color: #fff;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
+  }
 .text{
     color: aqua;
     text-align: center;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;  
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem; 
 }
 nav {
 	position: fixed;
@@ -82,12 +90,11 @@ div{
     color: red;        
 }
 img{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column; 
+    display: inline-block   ;
+    flex-direction: column-reverse; 
     position: relative;
     width: 25vw;
+
 }
 .subtitle {
     font-family: "Quicksand", sans-serif;
@@ -101,7 +108,7 @@ img{
   .subtxt{
     color: #10f9e6;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: justify ;
+    text-align: center ;
   }
 @media screen and (max-width: 768px) {
     nav .links {
@@ -186,7 +193,6 @@ img{
   .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
-    background-color: ;
     color: white;
     text-align: center;
     border-radius: 6px;
@@ -200,7 +206,7 @@ img{
   .tooltip:hover .tooltiptext {
     visibility: visible;
   }
-a{
+  a{
     color: aliceblue;
     text-decoration: none;  
 }
@@ -215,4 +221,46 @@ a:hover{
     flex-direction: column;
     position: relative;
 
+}
+#ton618{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+}
+#Phoenix {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+}
+#ton618 img{
+    width: 25vw;
+    height: 30vh;
+    justify-content: center;
+    display: flex;
+    background-color: blue;
+}
+#Phoenix img{
+width: 25vw;
+height: 50vh;
+justify-content: center;
+display: flex;
+
+
+
+}
+@media screen and (max-width:630px){
+    #ton618 img{
+        width: 45vw;
+        height: max-content;
+    }
+    #Phoenix img{
+        width: max-content;
+        height: max-content;
+}
 }
